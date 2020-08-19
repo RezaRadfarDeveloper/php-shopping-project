@@ -18,7 +18,7 @@
     </select>
         <?php echo strtolower($item); ?>"><?php echo $item; ?> -->
         <?php
-
+// this loads all the items(staff here) from database to access one field
 $staffs_set = find_all_staffs();
 while($staff = mysqli_fetch_assoc($staffs_set)){
 

@@ -10,6 +10,7 @@ required_login();
 <?php include(SHARED_PATH.'/admin_header.php'); ?>
 <div class="container" id="main-content">
 	<h2>Index for staff</h2>
+	<!-- shows current active user -->
 	<?php  echo $_SESSION['admin_id'];?>
 	 
 
