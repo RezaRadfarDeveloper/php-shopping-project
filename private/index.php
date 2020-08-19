@@ -9,7 +9,7 @@ required_login();
 <?php $page_title = "Index admin";?>
 <?php include(SHARED_PATH.'/admin_header.php'); ?>
 <div class="container" id="main-content">
-	<h2>Index for private</h2>
+	<h2>Index for staff</h2>
 	<?php  echo $_SESSION['admin_id'];?>
 	 
 
