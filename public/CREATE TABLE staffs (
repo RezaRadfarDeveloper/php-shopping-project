@@ -1,0 +1,6 @@
+CREATE TABLE staffs (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(10),
+  last_name VARCHAR(10),
+  full_name VARCHAR(255),
+  PRIMARY KEY (id));

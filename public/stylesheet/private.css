@@ -1,0 +1,10 @@
+
+body{
+    background-color: whitesmoke;
+}
+#message{
+    background-color: seashell;
+    padding: 10px;
+    margin: 20px;
+    color: skyblue;
+}
