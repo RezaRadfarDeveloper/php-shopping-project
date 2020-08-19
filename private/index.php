@@ -42,8 +42,8 @@ required_login();
 			<td><?php echo $staff['user_name'];?></td>
 			<td><?php echo "<a href='show.php?id=".$staff['id']."'>"; ?> View</a></td>
 			<td><?php echo "<a href='edit.php?id=".$staff['id']."'>"; ?> Edit</a></td>
-			<td><?php echo "<a href='delete.php?id=".$staff['id']."'>"; ?>Delete</a></td>
-		</tr>
+			<td><span class="delete" data-id="<?php echo $staff['id']; ?>">Delete</span> </td>
+			
 		</tbody>
 	<?php	}  ?>
 		
@@ -62,4 +62,5 @@ required_login();
 <?php 
 	mysqli_free_result($staffs_set);
 ?>
+  
 <?php include(SHARED_PATH.'/admin_footer.php'); ?>

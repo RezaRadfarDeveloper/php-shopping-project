@@ -1,24 +1,25 @@
 <?php
 require_once("initialise.php");?>
 <?php
-echo $_SESSION['admin_id'];
+// echo $_SESSION['admin_id'];
 required_login();
-
-//test here- should be deleted
-if(!isset($_GET['id'])){
-header("Location: index.php");
-}
-$id = $_GET['id'];
-
 if(is_post_request()){
-    
+   $id = $_POST['id']; 
     $result = delete_staff($id);
+    echo $id;
     $_SESSION['message'] = " staff has been deleted successfully";
     header("Location: index.php");
     }
     else{
     $staff = find_staff_by_id($id);
     }
+//test here- should be deleted
+if(!isset($_GET['id'])){
+header("Location: index.php");
+}
+$id = $_GET['id'];
+
+
     //Delete the requeste if it is a POST....
    
 
